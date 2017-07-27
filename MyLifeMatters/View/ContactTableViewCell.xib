@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ContactTableViewCell" customModule="MyLifeMatters" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="400" height="79"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="of1-UR-koK">
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="79"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n4S-LX-cQ2">
+                                <rect key="frame" x="355" y="19" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="38J-cD-brj"/>
+                                    <constraint firstAttribute="width" constant="40" id="t7X-nW-smh"/>
+                                </constraints>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z1Y-vM-8mb">
+                                <rect key="frame" x="0.0" y="-1" width="80" height="80"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="bW9-yX-DNm"/>
+                                    <constraint firstAttribute="width" constant="80" id="uvM-Xh-J5w"/>
+                                </constraints>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thanh-Tam Le" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oj4-E1-fjd">
+                                <rect key="frame" x="95" y="5" width="255" height="69"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="z1Y-vM-8mb" firstAttribute="leading" secondItem="of1-UR-koK" secondAttribute="leading" id="2s2-hU-xAw"/>
+                            <constraint firstAttribute="bottom" secondItem="oj4-E1-fjd" secondAttribute="bottom" constant="5" id="62j-kL-qs9"/>
+                            <constraint firstItem="n4S-LX-cQ2" firstAttribute="leading" secondItem="oj4-E1-fjd" secondAttribute="trailing" constant="5" id="CeE-hw-0UK"/>
+                            <constraint firstItem="oj4-E1-fjd" firstAttribute="top" secondItem="of1-UR-koK" secondAttribute="top" constant="5" id="MUG-jF-AH7"/>
+                            <constraint firstItem="n4S-LX-cQ2" firstAttribute="centerY" secondItem="of1-UR-koK" secondAttribute="centerY" id="UKY-po-8Ty"/>
+                            <constraint firstAttribute="trailing" secondItem="n4S-LX-cQ2" secondAttribute="trailing" constant="5" id="ax3-fh-EAT"/>
+                            <constraint firstItem="oj4-E1-fjd" firstAttribute="leading" secondItem="z1Y-vM-8mb" secondAttribute="trailing" constant="15" id="bxY-Se-C4a"/>
+                            <constraint firstItem="z1Y-vM-8mb" firstAttribute="centerY" secondItem="of1-UR-koK" secondAttribute="centerY" id="c7q-fJ-f39"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="of1-UR-koK" secondAttribute="trailing" id="7Pm-sB-LPU"/>
+                    <constraint firstItem="of1-UR-koK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="B1T-kl-hBf"/>
+                    <constraint firstAttribute="bottom" secondItem="of1-UR-koK" secondAttribute="bottom" id="Fjb-C4-jTM"/>
+                    <constraint firstItem="of1-UR-koK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="crT-dI-Bgf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="closeBtn" destination="n4S-LX-cQ2" id="5iW-9S-rFf"/>
+                <outlet property="iconBtn" destination="z1Y-vM-8mb" id="RMs-w6-z3o"/>
+                <outlet property="nameLabel" destination="oj4-E1-fjd" id="3Tj-fE-K0J"/>
+            </connections>
+            <point key="canvasLocation" x="31" y="53"/>
+        </tableViewCell>
+    </objects>
+</document>

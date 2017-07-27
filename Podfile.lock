@@ -1,0 +1,95 @@
+PODS:
+  - Alamofire (4.2.0)
+  - CNPPopupController (0.3.3)
+  - Crashlytics (3.8.3):
+    - Fabric (~> 1.6.3)
+  - EAIntroView (2.10.0):
+    - EARestrictedScrollView (~> 1.1.0)
+  - EARestrictedScrollView (1.1.0)
+  - EVReflection (3.4.1)
+  - Fabric (1.6.11)
+  - FontAwesomeKit (2.2.0):
+    - FontAwesomeKit/Core (= 2.2.0)
+    - FontAwesomeKit/FontAwesome (= 2.2.0)
+    - FontAwesomeKit/FoundationIcons (= 2.2.0)
+    - FontAwesomeKit/IonIcons (= 2.2.0)
+    - FontAwesomeKit/Zocial (= 2.2.0)
+  - FontAwesomeKit/Core (2.2.0)
+  - FontAwesomeKit/FontAwesome (2.2.0):
+    - FontAwesomeKit/Core
+  - FontAwesomeKit/FoundationIcons (2.2.0):
+    - FontAwesomeKit/Core
+  - FontAwesomeKit/IonIcons (2.2.0):
+    - FontAwesomeKit/Core
+  - FontAwesomeKit/Zocial (2.2.0):
+    - FontAwesomeKit/Core
+  - GrowingTextView (0.2.0)
+  - IQKeyboardManager (4.0.7)
+  - JSONModel (1.7.0)
+  - MBProgressHUD (1.0.0)
+  - NVActivityIndicatorView (3.0)
+  - ObjectMapper (2.2.2)
+  - PasswordTextField (1.0.4)
+  - PureLayout (3.0.2)
+  - Realm (2.1.0):
+    - Realm/Headers (= 2.1.0)
+  - Realm/Headers (2.1.0)
+  - RealmSwift (2.1.0):
+    - Realm (= 2.1.0)
+  - STPopup (1.8.2)
+  - SwiftyJSON (3.1.3)
+
+DEPENDENCIES:
+  - Alamofire
+  - CNPPopupController
+  - Crashlytics
+  - EAIntroView
+  - EVReflection
+  - Fabric
+  - FontAwesomeKit
+  - GrowingTextView
+  - IQKeyboardManager
+  - JSONModel
+  - MBProgressHUD (from `https://github.com/jdg/MBProgressHUD.git`)
+  - NVActivityIndicatorView
+  - ObjectMapper
+  - PasswordTextField
+  - PureLayout
+  - RealmSwift
+  - STPopup
+  - SwiftyJSON
+
+EXTERNAL SOURCES:
+  MBProgressHUD:
+    :git: https://github.com/jdg/MBProgressHUD.git
+
+CHECKOUT OPTIONS:
+  MBProgressHUD:
+    :commit: aec802ba2c2f524f8a47708aa6f714a48be73f49
+    :git: https://github.com/jdg/MBProgressHUD.git
+
+SPEC CHECKSUMS:
+  Alamofire: aa2e09d871c9160ac53c90e83c68064a94e3dfbe
+  CNPPopupController: 59b06290762f68beab5fb0bbfa87eb4dcbefb7de
+  Crashlytics: 2b6dbe138a42395577cfa73dfa1aa7248cadf39e
+  EAIntroView: 3494b7bbd1212e3a4f7e8d16194a1b00e7b9abb2
+  EARestrictedScrollView: b0c2a3f92fb2610bb44d71c5e4893777c89e45ef
+  EVReflection: 7abe8026327f83472fb60a7858fbfe1be346605d
+  Fabric: 5911403591946b8228ab1c51d98f1d7137e863c6
+  FontAwesomeKit: 025fd4dd1017fe4e3f8d47b03e024deedbb33cd4
+  GrowingTextView: 048c6ef8da6adfa89f010a9f11d5be6f569c75d7
+  IQKeyboardManager: 69002bb4fea60596b710e57d426abc00e5063630
+  JSONModel: 840bc0fcffb24b8454d2c026bf26fea454b8e98d
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  NVActivityIndicatorView: 81953b5e65093ba79edf4fe7268e002039ca5268
+  ObjectMapper: 9e385c2295bcc4e16eabbcfc85db801442bba545
+  PasswordTextField: 1fccb24dd769cfc963f1f60cb9fece692ad40530
+  PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
+  Realm: bc829ad0ef3d4eea70c34cfcc3b1704d18d50df1
+  RealmSwift: a4d4abbf0088c337cab5b738054395842e4b3052
+  STPopup: b69b3e7484ef7d2baec5f9ab2939f8a7bcdfe218
+  SwiftyJSON: 38a8ea2006779c0fc4c310cb2ee8195327740faf
+
+PODFILE CHECKSUM: d444c9a9adfb0048187b48db9d664c3fe2a5caa5
+
+COCOAPODS: 1.1.1

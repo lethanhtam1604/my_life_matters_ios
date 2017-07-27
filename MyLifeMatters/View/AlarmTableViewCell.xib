@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="AlarmTableViewCell" customModule="MyLifeMatters" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="400" height="79"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1b5-tq-iEj">
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="80"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tLG-L3-sZa">
+                                <rect key="frame" x="15" y="15" width="50" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HLg-rB-Txj">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="CLu-Ok-Pto"/>
+                                    <constraint firstItem="HLg-rB-Txj" firstAttribute="top" secondItem="tLG-L3-sZa" secondAttribute="top" id="O7N-wd-6k4"/>
+                                    <constraint firstAttribute="trailing" secondItem="HLg-rB-Txj" secondAttribute="trailing" id="SR1-3K-ltM"/>
+                                    <constraint firstAttribute="height" constant="50" id="VXS-4m-hgg"/>
+                                    <constraint firstAttribute="bottom" secondItem="HLg-rB-Txj" secondAttribute="bottom" id="bhG-ak-4s3"/>
+                                    <constraint firstItem="HLg-rB-Txj" firstAttribute="leading" secondItem="tLG-L3-sZa" secondAttribute="leading" id="pCi-AD-1UI"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sing a song" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Wu-MO-dYE">
+                                <rect key="frame" x="80" y="5" width="270" height="70"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X5R-Sz-clr">
+                                <rect key="frame" x="355" y="20" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="NFb-po-UV2"/>
+                                    <constraint firstAttribute="width" constant="40" id="vUm-zj-ALY"/>
+                                </constraints>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4Wu-MO-dYE" firstAttribute="top" secondItem="1b5-tq-iEj" secondAttribute="top" constant="5" id="7xO-V6-UeQ"/>
+                            <constraint firstAttribute="trailing" secondItem="X5R-Sz-clr" secondAttribute="trailing" constant="5" id="C7K-XQ-gyr"/>
+                            <constraint firstItem="X5R-Sz-clr" firstAttribute="centerY" secondItem="1b5-tq-iEj" secondAttribute="centerY" id="DfU-XK-MBr"/>
+                            <constraint firstItem="tLG-L3-sZa" firstAttribute="centerY" secondItem="1b5-tq-iEj" secondAttribute="centerY" id="VAy-YI-VHG"/>
+                            <constraint firstItem="4Wu-MO-dYE" firstAttribute="leading" secondItem="tLG-L3-sZa" secondAttribute="trailing" constant="15" id="Z5I-Pm-1Jx"/>
+                            <constraint firstItem="X5R-Sz-clr" firstAttribute="leading" secondItem="4Wu-MO-dYE" secondAttribute="trailing" constant="5" id="ifY-jE-prX"/>
+                            <constraint firstItem="tLG-L3-sZa" firstAttribute="leading" secondItem="1b5-tq-iEj" secondAttribute="leading" constant="15" id="jmz-KE-CRz"/>
+                            <constraint firstAttribute="bottom" secondItem="4Wu-MO-dYE" secondAttribute="bottom" constant="5" id="pP2-ZJ-Q6v"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="1b5-tq-iEj" secondAttribute="bottom" id="6v7-D4-8M3"/>
+                    <constraint firstAttribute="trailing" secondItem="1b5-tq-iEj" secondAttribute="trailing" id="ArD-TB-ciz"/>
+                    <constraint firstItem="1b5-tq-iEj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="MeS-lJ-dBS"/>
+                    <constraint firstItem="1b5-tq-iEj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="akE-N6-eiA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="closeBtn" destination="X5R-Sz-clr" id="MIO-G8-CYu"/>
+                <outlet property="songIconBtn" destination="HLg-rB-Txj" id="fyd-Lc-twC"/>
+                <outlet property="songNameLabel" destination="4Wu-MO-dYE" id="m6G-lb-u2Q"/>
+                <outlet property="songView" destination="tLG-L3-sZa" id="Igj-LI-gSp"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

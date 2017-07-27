@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="71" id="KGk-i7-Jjw" customClass="FileTransferTableViewCell" customModule="MyLifeMatters" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="400" height="79"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CMJ-F8-iWu">
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="79"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R55-bn-MfF">
+                                <rect key="frame" x="350" y="19" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="QZC-35-zdk"/>
+                                    <constraint firstAttribute="height" constant="40" id="zAN-hW-G08"/>
+                                </constraints>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="45M-aW-tNO">
+                                <rect key="frame" x="70" y="5" width="275" height="69"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k05-OW-DIh">
+                                <rect key="frame" x="15" y="19" width="40" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="k5g-H3-jBM"/>
+                                    <constraint firstAttribute="height" constant="40" id="y93-s0-G37"/>
+                                </constraints>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="k05-OW-DIh" firstAttribute="centerY" secondItem="CMJ-F8-iWu" secondAttribute="centerY" id="JYE-ZJ-RtE"/>
+                            <constraint firstItem="k05-OW-DIh" firstAttribute="leading" secondItem="CMJ-F8-iWu" secondAttribute="leading" constant="15" id="UFq-2N-w8H"/>
+                            <constraint firstItem="R55-bn-MfF" firstAttribute="leading" secondItem="45M-aW-tNO" secondAttribute="trailing" constant="5" id="VRk-av-stv"/>
+                            <constraint firstItem="45M-aW-tNO" firstAttribute="top" secondItem="CMJ-F8-iWu" secondAttribute="top" constant="5" id="VbU-jF-wbw"/>
+                            <constraint firstItem="45M-aW-tNO" firstAttribute="leading" secondItem="k05-OW-DIh" secondAttribute="trailing" constant="15" id="f2b-Zx-Mwz"/>
+                            <constraint firstItem="R55-bn-MfF" firstAttribute="centerY" secondItem="CMJ-F8-iWu" secondAttribute="centerY" id="sWG-7j-Bl6"/>
+                            <constraint firstAttribute="bottom" secondItem="45M-aW-tNO" secondAttribute="bottom" constant="5" id="saM-95-atj"/>
+                            <constraint firstAttribute="trailing" secondItem="R55-bn-MfF" secondAttribute="trailing" constant="10" id="tTC-Ns-NNI"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="CMJ-F8-iWu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="4fq-BI-DNW"/>
+                    <constraint firstItem="CMJ-F8-iWu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="9KK-wM-jpG"/>
+                    <constraint firstAttribute="bottom" secondItem="CMJ-F8-iWu" secondAttribute="bottom" id="g5F-qv-QkK"/>
+                    <constraint firstAttribute="trailing" secondItem="CMJ-F8-iWu" secondAttribute="trailing" id="ncs-Xn-tfb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="iconBtn" destination="k05-OW-DIh" id="Xv0-Rd-6k6"/>
+                <outlet property="pathLabel" destination="45M-aW-tNO" id="x4r-gO-hCt"/>
+                <outlet property="shareBtn" destination="R55-bn-MfF" id="OT4-hB-Nj6"/>
+            </connections>
+            <point key="canvasLocation" x="54" y="40.5"/>
+        </tableViewCell>
+    </objects>
+</document>
